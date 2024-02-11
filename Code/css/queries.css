@@ -1,0 +1,196 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .author-img {
+    width: 2rem;
+  }
+
+  .member-img {
+    width: 14rem;
+  }
+
+  .team-members {
+    text-align: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .member-name {
+    font-size: 1.6rem;
+  }
+
+  .member-title {
+    font-size: 1.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 100rem;
+    /* padding: 0 3.2rem; */
+    /* margin: 0 auto; */
+  }
+
+  .member-img {
+    width: 13rem;
+  }
+
+  .team-members {
+    text-align: center;
+    justify-content: center;
+
+    gap: 5rem;
+  }
+  .stats-fun-img {
+    width: 80rem;
+    left: 7%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 80rem;
+    /* padding: 0 3.2rem; */
+    /* margin: 0 auto; */
+  }
+
+  .stats-fun-img {
+    width: 60rem;
+    left: 7%;
+  }
+
+  .member-img {
+    width: 11rem;
+  }
+
+  .team-members {
+    text-align: center;
+    justify-content: center;
+
+    gap: 4rem;
+  }
+
+  .testimonial-main {
+    padding: 1.4rem 1.4rem 1.4rem 1.4rem;
+    left: 28%;
+    top: 13%;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats {
+    height: 110rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 42%;
+  }
+
+  .container {
+    max-width: 80rem;
+    /* padding: 0 3.2rem; */
+    /* margin: 0 auto; */
+  }
+
+  .member-img {
+    width: 9rem;
+  }
+
+  .team-members {
+    text-align: center;
+    justify-content: center;
+
+    gap: 4rem;
+  }
+
+  .header-container {
+    padding-left: 5rem;
+  }
+
+  .heading-primary {
+    font-size: 8rem;
+  }
+
+  .stats-fun-img {
+    width: 60rem;
+    left: 7%;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 28%;
+  }
+
+  .container {
+    max-width: 60rem;
+    /* padding: 0 3.2rem; */
+    /* margin: 0 auto; */
+  }
+
+  .member-img {
+    width: 9rem;
+  }
+
+  .team-members {
+    text-align: center;
+    justify-content: center;
+
+    gap: 2rem;
+  }
+
+  .testimonials-heading-secondary-second {
+    font-size: 4.4rem;
+  }
+
+  .testimonials-heading-secondary {
+    font-size: 4.4rem;
+  }
+
+  .stats-fun-img {
+    width: 50rem;
+    left: 6%;
+  }
+
+  .testimonial-main {
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+    left: 28%;
+    top: 13%;
+  }
+}
